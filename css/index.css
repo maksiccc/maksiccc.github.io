@@ -720,7 +720,7 @@ kbd {
   height: 80vh;
 }
 .header-inner--bgcolor {
-  background-color: ;
+  background-color: #333;
 }
 .header-inner--height {
   height: 50px !important;
@@ -748,7 +748,7 @@ kbd {
 }
 .header-nav--sticky {
   position: fixed;
-  background-color: #2d2e30;
+  background-color: #333;
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   -o-transform: translateY(-100%);
@@ -884,7 +884,7 @@ kbd {
   z-index: 0;
   width: 100%;
   height: 100%;
-  background: url("/source/assets/bg_sakura.jpg") no-repeat center/cover;
+  background: url("/images/avatar.png") no-repeat center/cover;
 }
 .header-banner-info {
   position: absolute;

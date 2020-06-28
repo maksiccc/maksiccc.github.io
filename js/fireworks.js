@@ -1,3 +1,4 @@
+//鼠标点击烟花爆炸效果
 "use strict";
 
 function updateCoords(e) {

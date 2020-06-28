@@ -1,4 +1,5 @@
-var now = new Date(); 
+//网站运行时间统计效果
+var now = new Date();
     function createtime() { 
         var grt= new Date("06/28/2020 11:05:00");//在此处修改你的建站时间
         now.setTime(now.getTime()+250); 

@@ -148,11 +148,20 @@
       </li>
       
       <li>
+        <a href="/galleries">
+          
+          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>相册</span>
+        </a>
+      </li>
+      
+      <li>
         <a href="/box">
           
           <i class="fas fa-box" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>工具</span>
+          <span>工具箱</span>
         </a>
       </li>
       
@@ -286,11 +295,21 @@
               
                 <li>
 
+                  <a href="/galleries " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
+			      
+		          <span>相册</span>
+                  </a>
+                </li>
+              
+                <li>
+
                   <a href="/box " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-box" style="position: absolute;left:50px" ></i>
 			      
-		          <span>工具</span>
+		          <span>工具箱</span>
                   </a>
                 </li>
               
@@ -364,10 +383,43 @@
             </div>
             <div class="tag-chips">
                 
+                
+                <a href="/tags/test/" title="test: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="test" style="background-color: #F9EBEA;">test
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
 </div>
+
+    
+    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud([{"text":"test","weight":1,"link":"/tags/test/"}], {
+        autoResize: true
+    });
+</script>
 
     
 
@@ -511,11 +563,7 @@ $(function () {
 
    
     
-    
-    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-    <script type="text/javascript" src="/js/fireworks.js"></script>
-     
+
     
 
 
@@ -526,35 +574,9 @@ $(function () {
     <script src="/libs/aos/aos.js"></script>
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    
-
-    
     <script src="/js/matery.js"></script>
     
-
-
-     
-       <script src="/js/cursor.js"></script>
-             
-
-
-
     
-      <script type="text/javascript" src="/js/click_show_text.js"><\/script>
-     
-    
-
-
-
-
- 
-   
-    
-
-
-
-
-
     <!-- Baidu Analytics -->
 
 <script>
@@ -584,9 +606,60 @@ $(function () {
 </script>
     
     
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
+    
+    
+    
+    
+    
+    <script type="text/javascript" src="/js/change_title.js"></script>
+    
+
+
+
+    
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+     
+
+
+
+
+
+     
+       <script src="/js/cursor.js"></script>
+      
+
+
+
+    
+      <script type="text/javascript" src="/js/click_show_text.js"><\/script>
+     
+    
+       
+
+
+
+
+    
+
+
+
+
+ 
+   
+    
+
+
+
+
+
+
 
     
 

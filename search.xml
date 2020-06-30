@@ -5,12 +5,28 @@
     
     <entry>
       <title>test1</title>
-      <link href="/20200627/uncategorized/test1/"/>
-      <url>/20200627/uncategorized/test1/</url>
+      <link href="/20200627/Diary/Life/lll/test1/"/>
+      <url>/20200627/Diary/Life/lll/test1/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> Diary </category>
+          
+          <category> Life </category>
+          
+          <category> lll </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> test </tag>
+            
+        </tags>
       
     </entry>
     
@@ -18,11 +34,21 @@
     
     <entry>
       <title>test</title>
-      <link href="/20200620/uncategorized/test/"/>
-      <url>/20200620/uncategorized/test/</url>
+      <link href="/20200620/Di/kkk/lll/test/"/>
+      <url>/20200620/Di/kkk/lll/test/</url>
       
-        <content type="html"><![CDATA[<img src="/20200620/uncategorized/test/avatat_tetu.png" class="" title="slug"><img src="D:\Blog\source\_posts\test\avatat_tetu.png" alt="avatat_tetu" style="zoom:25%;" /><pre><code class="javascript">/*** nth element in the fibonacci series.* @param n &gt;= 0* @return the nth element, &gt;= 0.*/function fib(n) {  var a = 1, b = 1;  var tmp;  while (--n &gt;= 0) {    tmp = a;    a += b;    b = tmp;  }  return a;}document.write(fib(10));</code></pre>]]></content>
+        <content type="html"><![CDATA[<img src="/20200620/Di/kkk/lll/test/avatat_tetu.png" class="" title="slug"><pre><code class="javascript">/*** nth element in the fibonacci series.* @param n &gt;= 0* @return the nth element, &gt;= 0.*/function fib(n) {  var a = 1, b = 1;  var tmp;  while (--n &gt;= 0) {    tmp = a;    a += b;    b = tmp;  }  return a;}document.write(fib(10));</code></pre>]]></content>
       
+      
+      <categories>
+          
+          <category> Di </category>
+          
+          <category> kkk </category>
+          
+          <category> lll </category>
+          
+      </categories>
       
       
     </entry>

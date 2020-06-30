@@ -148,11 +148,20 @@
       </li>
       
       <li>
+        <a href="/galleries">
+          
+          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>相册</span>
+        </a>
+      </li>
+      
+      <li>
         <a href="/box">
           
           <i class="fas fa-box" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>工具</span>
+          <span>工具箱</span>
         </a>
       </li>
       
@@ -286,11 +295,21 @@
               
                 <li>
 
+                  <a href="/galleries " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
+			      
+		          <span>相册</span>
+                  </a>
+                </li>
+              
+                <li>
+
                   <a href="/box " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-box" style="position: absolute;left:50px" ></i>
 			      
-		          <span>工具</span>
+		          <span>工具箱</span>
                   </a>
                 </li>
               
@@ -374,7 +393,17 @@
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">6</a></span>
+    <span class="name">分类</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags">1</a></span>
+    <span class="name">标签</span>
+</div>
 
 
                     </div>
@@ -394,7 +423,17 @@
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">6</a></span>
+    <span class="name">分类</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags">1</a></span>
+    <span class="name">标签</span>
+</div>
 
 
                                 </div>
@@ -510,7 +549,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06"]
+            data: ["2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07"]
         },
         yAxis: {
             type: 'value',
@@ -520,7 +559,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,3],
+                data: [0,0,0,0,0,0,0,0,0,0,0,3,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -562,7 +601,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [],
+                data: [{"name":"Di","value":1},{"name":"Diary","value":1},{"name":"kkk","value":1},{"name":"Life","value":1},{"name":"lll","value":1},{"name":"lll","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -586,7 +625,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: []
+                data: ["test"]
             }
         ],
         yAxis: [
@@ -599,7 +638,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [],
+                data: [1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -778,11 +817,7 @@ $(function () {
 
    
     
-    
-    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-    <script type="text/javascript" src="/js/fireworks.js"></script>
-     
+
     
 
 
@@ -793,35 +828,9 @@ $(function () {
     <script src="/libs/aos/aos.js"></script>
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    
-
-    
     <script src="/js/matery.js"></script>
     
-
-
-     
-       <script src="/js/cursor.js"></script>
-             
-
-
-
     
-      <script type="text/javascript" src="/js/click_show_text.js"><\/script>
-     
-    
-
-
-
-
- 
-   
-    
-
-
-
-
-
     <!-- Baidu Analytics -->
 
 <script>
@@ -851,9 +860,60 @@ $(function () {
 </script>
     
     
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
+    
+    
+    
+    
+    
+    <script type="text/javascript" src="/js/change_title.js"></script>
+    
+
+
+
+    
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+     
+
+
+
+
+
+     
+       <script src="/js/cursor.js"></script>
+      
+
+
+
+    
+      <script type="text/javascript" src="/js/click_show_text.js"><\/script>
+     
+    
+       
+
+
+
+
+    
+
+
+
+
+ 
+   
+    
+
+
+
+
+
+
 
     
 

@@ -56,3 +56,39 @@
         transform: translate(0, 0.5px) rotate(1.5deg);
     }
 }
+
+
+/*自定义的鼠标样式*/
+
+*{
+	/* 默认？ */
+    cursor: url("/medias/cursor/cursor1.ico"),auto!important;
+}
+
+:active{
+	/* 点击或按住时？ */
+    cursor: url("/medias/cursor/cursor2.ico"),auto!important;
+}
+
+
+.text:hover{ 
+	/* 此光标指文本 */
+    cursor: url("/medias/cursor/cursor3.ico"),auto!important;
+}
+
+/*以下暂未配置*/
+.pointer:hover{  
+	/*光标呈现为指示链接的指针（一只手）*/
+    cursor: url("/medias/cursor/cursor7.ico"),auto!important;
+}
+
+
+    
+.crosshair:hover {
+	cursor: url("/medias/cursor/cursor6.ico"),auto!important;
+	/*光标成十字线*/
+}
+.move:hover {
+	cursor: url("/medias/cursor/cursor8.ico"),auto!important;
+	/*此光标指示某对象可被移动。*/
+}

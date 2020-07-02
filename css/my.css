@@ -76,7 +76,7 @@
     cursor: url("/medias/cursor/cursor3.ico"),auto!important;
 }
 
-/*以下暂未配置*/
+
 .pointer:hover{  
 	/*光标呈现为指示链接的指针（一只手）*/
     cursor: url("/medias/cursor/cursor7.ico"),auto!important;

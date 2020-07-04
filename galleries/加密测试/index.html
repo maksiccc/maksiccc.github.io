@@ -624,13 +624,22 @@
 <div class="container">
 	<div class="card">
     	<div class="photo-wrapper">
-        	<div class="waterfall" id="mygallery">
-            	<a href="/galleries/加密测试/0.jpg"     class="photo-item" rel="example_group"     data-fancybox="images">      <img src="/galleries/加密测试/0.jpg"       alt=加密测试/0.jpg>
-    </a><a href="/galleries/加密测试/1.jpg"     class="photo-item" rel="example_group"     data-fancybox="images">      <img src="/galleries/加密测试/1.jpg"       alt=加密测试/1.jpg>
-    </a><a href="/galleries/加密测试/2.jpg"     class="photo-item" rel="example_group"     data-fancybox="images">      <img src="/galleries/加密测试/2.jpg"       alt=加密测试/2.jpg>
-    </a><a href="/galleries/加密测试/3.jpg"     class="photo-item" rel="example_group"     data-fancybox="images">      <img src="/galleries/加密测试/3.jpg"       alt=加密测试/3.jpg>
-    </a>
-        	</div>
+        	
+
+            <script src="/lib/crypto-js.js"></script>
+            <script src="/js/gallery-encrypt.js"></script>
+            <div id="hbe-security">
+                <div class="hbe-input-container">
+                    <input type="password" class="hbe-form-control" id="pass"  placeholder="请输入密码查看内容"/>
+                    <a href="javascript:;" class="btn-decrypt" id="btn_decrypt">解密</a>
+                </div>
+            </div>
+            <div  id="mygallery">
+                <div class="waterfall" id="encrypt-blog" style="display:none">
+                    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
+                </div>
+            </div>
+        
         </div>
     </div>
     
@@ -680,8 +689,8 @@
 <script>
 
   $("a[rel=example_group]").fancybox();
-  $("#mygallery").justifiedGallery({margins: 5, rowHeight: 150});
-
+  //$("#mygallery").justifiedGallery({margins: 5, rowHeight: 150});
+  $("#encrypt-blog").justifiedGallery({margins: 5, rowHeight: 150});//加密相册用到的初始化justifedGallery
 </script>
 
     <footer class="page-footer bg-color">
@@ -695,8 +704,12 @@
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
-            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">67</span>&nbsp;字
+            
+            	<span id="container_wordcount">
+            		&nbsp;<i class="fas fa-chart-area"></i>&nbsp;未加密文章总字数:&nbsp;<span
+                	class="white-color">95</span>&nbsp;字
+                </span>
+            
             
             
             

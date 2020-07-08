@@ -113,7 +113,7 @@
 
 
 
-//相册加密
+/*相册加密*/
 
 .hbe-input-container  .btn-decrypt{
   display: inline-block;
@@ -129,3 +129,250 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+
+
+
+/*butterfly主题移植的分类页样式*/
+
+.category-content ol,
+.category-content ul {
+	margin-top: .4rem;
+	padding: 0 0 0 .8rem;
+	list-style: none;
+	counter-reset: li
+}
+
+.category-content ol p,
+.category-content ul p {
+	margin: 0
+}
+
+.category-content ol ol,
+.category-content ol ul,
+.category-content ul ol,
+.category-content ul ul {
+	padding-left: .5rem
+}
+
+.category-content ol li,
+.category-content ul li {
+	position: relative;
+	margin: .3rem 0;
+	padding: .1rem .5rem .1rem 1.5rem!important
+}
+
+.category-content ol li:hover:before,
+.category-content ul li:hover:before {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg)
+}
+
+.category-content ol li:before,
+.category-content ul li:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #49b1f5;
+	color: #fff;
+	cursor: pointer;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	transition: all .3s ease-out
+}
+
+.category-content ol li:before {
+	margin-top: .2rem;
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: .6rem;
+	content: counter(li);
+	counter-increment: li;
+	text-align: center;
+	font-size: .6rem;
+	line-height: 1.2rem
+}
+
+.category-content ul li:hover:before {
+	border-color: #ff7242
+}
+
+.category-content ul li:before {
+	top: 10px;
+	margin-left: .45rem;
+	width: .3rem;
+	height: .3rem;
+	border: .15rem solid #49b1f5;
+	border-radius: .3rem;
+	background: 0 0;
+	content: '';
+	line-height: .3rem
+}
+
+
+
+
+.category-lists {
+	padding: 1rem 0 1.5rem
+}
+
+.category-lists .category__title {
+	text-align: center;
+	font-size: 1.8rem
+}
+
+.category-list a {
+	color: #4c4948;
+	cursor: pointer
+}
+
+.category-list .category-list-count {
+	margin-left: .4rem;
+	color: #858585
+}
+
+.category-list .category-list-count:before {
+	content: '('
+}
+
+.category-list .category-list-count:after {
+	content: ')'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*butterfly主题移植的折叠分类页样式*/
+
+.item-headline .category__title {
+	text-align: center;
+	font-size: 1.8rem
+}
+
+
+.card-archives ul.card-archive-list,
+.card-categories ul.card-category-list {
+	margin: 0;
+	padding: .2rem 0 0;
+	list-style: none
+}
+
+.card-archives ul.card-archive-list>.card-archive-list-item,
+.card-categories ul.card-category-list>.card-category-list-item {
+	padding: .15rem 1rem;
+	transition: all .5s
+}
+
+.card-archives ul.card-archive-list>.card-archive-list-item:hover,
+.card-categories ul.card-category-list>.card-category-list-item:hover {
+	padding: .15rem .85rem;
+	background-color: $light-blue
+}
+
+.card-archives ul.card-archive-list>.card-archive-list-item a,
+.card-categories ul.card-category-list>.card-category-list-item a {
+	color: $font-black
+}
+
+.card-archives ul.card-archive-list>.card-archive-list-item a span,
+.card-categories ul.card-category-list>.card-category-list-item a span {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: bottom;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.card-archives ul.card-archive-list>.card-archive-list-item a span:first-child,
+.card-categories ul.card-category-list>.card-category-list-item a span:first-child {
+	width: 80%
+}
+
+.card-archives ul.card-archive-list>.card-archive-list-item a span:last-child,
+.card-categories ul.card-category-list>.card-category-list-item a span:last-child {
+	width: 20%;
+	text-align: right
+}
+
+.card-archives ul.card-archive-list>.card-archive-list-item.more span,
+.card-categories ul.card-category-list>.card-category-list-item.more span {
+	padding-right: .3rem;
+	width: auto !important;
+	transition: .5s
+}
+
+.card-archives ul.card-archive-list>.card-archive-list-item.more:hover span,
+.card-categories ul.card-category-list>.card-category-list-item.more:hover span {
+	padding-right: .6rem;
+	background: #00c4b6;
+    color: #f7f7f7;
+}
+
+
+.card-categories ul .card-category-list-name {
+	display: inline-block;
+  	/*width: 70%;*/  
+	cursor: pointer
+}
+
+.card-categories ul .card-category-list-count {
+	display: inline-block;
+	/*width: 7%*/
+}
+
+
+.card-categories ul .card-category-list-count {
+	margin-left: .4rem;
+	color: #858585
+}
+
+.card-categories ul .card-category-list-count:before {
+	content: '('
+}
+
+.card-categories ul .card-category-list-count:after {
+	content: ')'
+}
+
+
+
+.card-categories ul .fa {
+	display: inline-block;
+	width: 15px;
+	cursor: pointer
+}
+
+.card-categories ul ul {
+	display: none
+}
+
+.card-categories ul .card-post-name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block
+}
+
+.card-categories .card-category-list.child {
+	padding: 0 0 0 1.2rem
+}
+
+
+
+
+
+

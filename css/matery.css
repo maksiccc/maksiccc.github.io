@@ -1311,7 +1311,15 @@ thead {
 	padding: 6px 6px;
 }
 
-#articleContent [type="checkbox"]:not(:checked),
+
+
+
+
+
+
+/*修改 自定义 注释 ，与外挂标签冲突，该处会让checkbox起始位置有误且选择框图案不显示*/
+
+/*#articleContent [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
     position: inherit;
     margin-left: -1.3rem;
@@ -1320,7 +1328,13 @@ thead {
     vertical-align: middle;
     left: unset;
     visibility: visible;
-}
+}*/
+
+
+
+
+
+
 
 @media only screen and (min-width: 600px) {
     #article-share .social-share a {

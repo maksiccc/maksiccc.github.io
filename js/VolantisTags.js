@@ -1,4 +1,5 @@
 /* eslint-disable */
+
 (function ($) {
     "use strict";
     function setTabs() {
@@ -33,3 +34,5 @@
       }, 300);
     });
   })(jQuery);
+  
+

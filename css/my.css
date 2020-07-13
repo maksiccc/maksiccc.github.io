@@ -278,9 +278,10 @@
 }
 
 .card-archives ul.card-archive-list>.card-archive-list-item:hover,
-.card-categories ul.card-category-list>.card-category-list-item:hover {
-	padding: .15rem .85rem;
-	background-color: $light-blue
+.card-categories ul.card-category-list>.card-category-list-item :hover {
+	/*padding: .15rem .85rem;*/
+	background-color: #FFCCFF;
+	border-radius: 4px
 }
 
 .card-archives ul.card-archive-list>.card-archive-list-item a,

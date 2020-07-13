@@ -298,8 +298,8 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #A020F0 0%, #FF00FF 100%);//导航栏与底栏渐变色效果 
-    opacity: 0.5;  //透明效果 值范围 0~1
+    background-image: linear-gradient(to right, #A020F0 0%, #FF00FF 100%);/*导航栏与底栏渐变色效果 */
+    opacity: 1;  /*透明效果 值范围 0~1*/
 }
 
 .text-color {
@@ -1087,7 +1087,7 @@ article .article-tags .chip {
 }
 
 #artDetail a {
-    margin-right: 0 !important;
+/*    margin-right: 0 !important;*/  /*修改  自定义 注释 此处与btnbeautify冲突*/
     text-transform: none !important;
 }
 
@@ -1229,13 +1229,23 @@ article .article-tags .chip {
     text-indent: 0.2rem;
 }
 
+
+
+
+
+/*此处会使按钮中文字与按钮同色*/
+
+/*
 #articleContent a {
     padding: 0 2px;
-    color: #42b983;
+    color: #039be5;//#42b983;自定义 修改 注释 文章中的链接主题原生为绿色，改为蓝色
     font-weight: 500;
-    text-decoration: underline;
+    /*text-decoration: underline;//自定义 修改 注释 文章中的链接主题原生为有下划线，改为无
     word-wrap: break-word;
 }
+*/
+
+
 
 #articleContent .img-item {
     text-align: center;
@@ -1254,6 +1264,10 @@ article .article-tags .chip {
     cursor: pointer;
 }
 
+
+
+/*自定义 修改 注释 此处与标签外挂冲突*/
+/*
 #articleContent ol,
 #articleContent ul {
     display: block;
@@ -1282,7 +1296,7 @@ article .article-tags .chip {
     border-collapse: collapse;
     border-spacing: 0;
     overflow: auto;
-}
+}*/
 
 /**
 #articleContent table,
@@ -1909,8 +1923,16 @@ footer .social-statis {
     position: relative;
 }
 
+
+
+
+
 footer a {
     color: #fff;
+}
+/*修改 自定义 注释 添加此代码解决引用块中链接显示白色不明显的问题*/
+footer cite a {
+    color: #039be5;
 }
 
 footer .copy-right {

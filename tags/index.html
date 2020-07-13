@@ -5,6 +5,9 @@
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
     <meta name="keywords" content="标签, maksiccc">
+    
+    <link rel="stylesheet" type="text/css" href="/libs/font-awesome-animation/src/font-awesome-animation.css">
+    
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -22,8 +25,9 @@
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
     
-    
+    <link rel="stylesheet" type="text/css" href="/css/Volantisstyle.css">
     <link rel="stylesheet" type="text/css" href="/css/VolantisTags.css">
+    <script type="text/javascript" src="/libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/VolantisTags.js"></script>
 	
     <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
@@ -663,44 +667,11 @@
             </div>
             <div class="tag-chips">
                 
-                
-                <a href="/tags/test/" title="test: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="test" style="background-color: #F9EBEA;">test
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
             </div>
         </div>
     </div>
 </div>
 
-
-    
-    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
-<style type="text/css">
-    #tag-wordcloud {
-        width: 100%;
-        height: 300px;
-    }
-</style>
-
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="tag-wordcloud" class="card-content"></div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
-<script type="text/javascript">
-    
-
-    $('#tag-wordcloud').jQCloud([{"text":"test","weight":1,"link":"/tags/test/"}], {
-        autoResize: true
-    });
-</script>
 
     
 
@@ -721,7 +692,7 @@
             
             	<span id="container_wordcount">
             		&nbsp;<i class="fas fa-chart-area"></i>&nbsp;未加密文章总字数:&nbsp;<span
-                	class="white-color">1k</span>&nbsp;字
+                	class="white-color">1.3k</span>&nbsp;字
                 </span>
             
             
@@ -915,7 +886,7 @@ $(function () {
     
     
     
-    
+    <script type="text/javascript" src="/js/hidebutton.js"></script>
     
     
     
@@ -948,8 +919,8 @@ $(function () {
 
 
     
-    	//与主题自带的canvas_nest功能一样，但canvas_nest不知为何失效了
-       //script(color="0,174,255" opacity='0.7' zIndex="-2" count="200" )
+    	<!--与主题自带的canvas_nest功能一样，但canvas_nest不知为何失效了-->
+       <!--script(color="0,174,255" opacity='0.7' zIndex="-2" count="200" )-->
         <script type="text/javascript" color="0,0,255"
         	pointColor="0,0,255" opacity='0.7'
         	zIndex="-1" count="99"
